@@ -88,23 +88,55 @@ transform:scale(1.1);
     opacity:0;
   }
 }
+/* Star container */
+
 .stars{
 position:fixed;
 top:0;
 left:0;
 width:100%;
 height:100%;
+pointer-events:none;
 }
-.stars span:nth-child(1){top:20%; left:15%;}
-.stars span:nth-child(2){top:40%; left:60%;}
-.stars span:nth-child(3){top:70%; left:30%;}
-@keyframes sparkle{
-0%{opacity:0;}
-50%{opacity:1;}
-100%{opacity:0;}
-}
+
+/* Individual stars */
+
 .stars span{
-animation:sparkle 4s linear infinite;
+position:absolute;
+font-size:18px;
+animation:sparkle 3s linear infinite;
+}
+
+/* Different star positions */
+
+.stars span:nth-child(1){top:10%; left:15%;}
+.stars span:nth-child(2){top:30%; left:70%;}
+.stars span:nth-child(3){top:60%; left:25%;}
+.stars span:nth-child(4){top:80%; left:50%;}
+.stars span:nth-child(5){top:20%; left:90%;}
+.stars span:nth-child(6){top:50%; left:10%;}
+.stars span:nth-child(7){top:75%; left:80%;}
+.stars span:nth-child(8){top:40%; left:40%;}
+
+/* Sparkle animation */
+
+@keyframes sparkle{
+
+0%{
+opacity:0;
+transform:scale(0.5);
+}
+
+50%{
+opacity:1;
+transform:scale(1);
+}
+
+100%{
+opacity:0;
+transform:scale(0.5);
+}
+
 }
 </style>
 
