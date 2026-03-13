@@ -61,37 +61,12 @@ pointer-events:none;
 overflow:hidden;
 }
 
-.hearts span{
-position:absolute;
-font-size:30px;
-animation:float 6s linear infinite;
-bottom:-50px;
-}
-
-.hearts span:nth-child(1){ left:10%; animation-duration:7s;}
-.hearts span:nth-child(2){ left:30%; animation-duration:5s;}
-.hearts span:nth-child(3){ left:50%; animation-duration:6s;}
-.hearts span:nth-child(4){ left:70%; animation-duration:8s;}
-.hearts span:nth-child(5){ left:90%; animation-duration:7s;}
-
-@keyframes float{
-0%{
-transform:translateY(0);
-opacity:1;
-}
-100%{
-transform:translateY(-100vh);
-opacity:0;
-}
-}
 </style>
 
 </head>
 
 <body>
-<div class="hearts">
-❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️
-</div
+
 <div id="lockscreen">
 
 <h1>KHUSHII'S BIRTHDAY SURPRISE</h1>
@@ -149,26 +124,7 @@ document.getElementById("wrong").innerHTML="❌ Wrong password. Try again.";
 </script>
 <div class="floating-hearts"></div>
 
-<style>
-.floating-hearts{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-pointer-events:none;
-background-image:
-url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Heart_corazón.svg/32px-Heart_corazón.svg.png");
-background-repeat:repeat;
-animation:heartsMove 15s linear infinite;
-opacity:0.4;
-}
 
-@keyframes heartsMove{
-0%{background-position:0 100vh;}
-100%{background-position:0 -100vh;}
-}
-</style>
 </body>
 
 </html>
